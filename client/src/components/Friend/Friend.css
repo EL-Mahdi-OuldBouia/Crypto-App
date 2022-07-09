@@ -1,0 +1,75 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
+  height: 35px;
+  width: 120px;
+  background-color: azure;
+}
+
+.friend img {
+  border-radius: 50%;
+  margin-left: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.friend img:hover {
+  transform: scale(1.5) translateX(5px);
+}
+
+.friend .icon {
+  color: rgb(120, 115, 115);
+  margin-right: 3px;
+  font-size: 1.5rem;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+
+.friend > span {
+  position: relative;
+  display: inline;
+  transition: 0.1s ease-in;
+}
+
+.friend > span:hover {
+  transform: translateY(-2px);
+}
+
+.friend .plus {
+  font-size: 0.87rem;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+}
+.friend .plus:active {
+  transform: scale(0.94);
+  color: rgb(188, 203, 188);
+}
+
+.friends .minus {
+  font-size: 0.87rem;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+}
+
+.friend .minus:active {
+  transform: scale(0.94);
+  color: red;
+}
+
+.friend .notifications {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(172, 164, 164);
+  left: 0;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 0.6rem;
+  cursor: pointer;
+  background-color: rgb(223, 208, 208);
+}
+
+.friend h5 {
+  margin-right: 3px;
+}

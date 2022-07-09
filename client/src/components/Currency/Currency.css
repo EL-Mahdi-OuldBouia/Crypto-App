@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.currency {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(125, 120, 120);
+  width: 98vw;
+  border-bottom: 1px solid rgb(51, 52, 51);
+  text-align: end;
+}
+
+.currency span:nth-child(n + 3) {
+  display: flex;
+  width: 14vw;
+  justify-content: start;
+  margin-left: -1rem;
+  color: yellow;
+  font-size: 0.74rem;
+}
+
+.drop-down {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(137, 136, 143);
+}
+
+#angle {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+}
+
+#angle:active {
+  transform: scale(0.94);
+}

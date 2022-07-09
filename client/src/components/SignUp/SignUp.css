@@ -1,0 +1,51 @@
+.sign-up form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sign-up form .containerS {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.sign-up form input {
+  height: 30px;
+  width: 220px;
+  border: 2px solid #949cc0;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+
+#sign-up-btn {
+  width: 85px;
+  height: 30px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+#sign-up-btn:active {
+  transform: scale(0.95);
+}
+
+.sign-up .containerS .iconPass {
+  position: absolute;
+  right: 10px;
+  color: #3f4a7b;
+  cursor: pointer;
+}
+
+.sign-up .containerS .iconPass:active {
+  transform: scale(0.95);
+}

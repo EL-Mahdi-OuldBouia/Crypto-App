@@ -1,0 +1,61 @@
+.chat-menu {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  border: 1px solid rgb(186, 23, 23);
+  gap: 0.5rem;
+  background-color: #fcf8e8;
+  width: 180px;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+}
+
+.chat-menu .btns {
+  z-index: 4;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.chat-menu .btns button {
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid yellow;
+  outline: none;
+  margin-left: 5px;
+  z-index: 4;
+  height: 22px;
+}
+
+.chat-menu button:active {
+  transform: scale(0.98) translateY(1px);
+}
+
+.chat-menu p {
+  width: 100%;
+  height: 15px;
+  margin-top: 0px;
+  margin-bottom: -5px;
+  background-color: rgb(123, 123, 201);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  color: rgb(28, 28, 28);
+  text-transform: uppercase;
+}
+
+.chat-menu::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  border-top-left-radius: 3px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #fcf8e8;
+  z-index: 1;
+}

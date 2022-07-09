@@ -1,0 +1,126 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: #fefefe;
+  height: 80vh;
+}
+
+/***********---Left---************/
+.home .left {
+  flex: 1;
+  height: 90%;
+  width: 38vw;
+  background: linear-gradient(45deg, #dddddd, #eeeeee);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  margin-top: 1rem;
+  border-radius: 12px;
+  border: 2px solid rgb(244, 244, 9);
+}
+
+.home .left .news-container {
+  height: 55vh;
+  width: 38vw;
+  background: linear-gradient(45deg, #dddddd, #eeeeee);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  border-radius: 12px;
+  border: 2px solid rgb(244, 244, 9);
+}
+
+.home .left .swiper {
+  display: flex;
+  gap: 20px;
+  width: 450px;
+  height: 210px;
+}
+
+.home .left button {
+  z-index: 40;
+  width: 85px;
+  height: 25px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffe69a;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 1px 2px 3px 3px rgba(255, 255, 255, 0.1);
+}
+
+.home .left button:active {
+  transform: scale(0.94);
+  box-shadow: 1px 2px 3px 1px rgba(255, 255, 255, 0.15);
+}
+
+.home .left .left-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.home .left .left-bottom img {
+  width: 200px;
+  height: 100px;
+  margin-top: -2rem;
+  border-radius: 12px;
+  border: 2px solid yellow;
+}
+
+.home .left .left-bottom .blur {
+  position: absolute;
+  width: 150px;
+  height: 160px;
+  z-index: -1;
+  filter: blur(80px);
+}
+
+.home .left .left-bottom .b1 {
+  left: -5px;
+  bottom: -5px;
+  background: linear-gradient(-90deg, #9772fb, #ff7700);
+}
+
+.home .left .left-bottom .b2 {
+  right: -3px;
+  top: -5px;
+  background: linear-gradient(90deg, #2e0249, #413f42);
+}
+
+/*************--Middle--**************/
+.home .middle {
+  flex: 2;
+}
+
+/*******---Right---************/
+
+.home .Right {
+  flex: 1;
+}
+
+.home .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin-top: -15rem;
+}
+
+/********************Home Chat application ********************/
+
+.home .chat {
+  /* position: absolute; */
+  justify-self: flex-end;
+  z-index: 3;
+  /* bottom: 0; */
+}
+
+/*************** Chat Menu ********/

@@ -1,0 +1,230 @@
+.chatt {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  width: 250px;
+  height: 350px;
+  background-color: #9f9b99;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.chat2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  width: 250px;
+  height: 50px;
+  background-color: #9f9b99;
+  border: 1px solid;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 0px;
+  flex-direction: row;
+  /* background-color: green; */
+}
+
+.nav .image {
+  background-color: grey; /*grey if the friend is not connected green else*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.nav img {
+  border-radius: 50%;
+}
+
+.nav .nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav .name {
+  /* margin-left: -65px; */
+}
+
+.nav .nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav .toggle-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav .nav-right .toggle-btn .tg-btn {
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: 0.2s ease-in;
+}
+
+.nav .nav-right .toggle-btn .b1:hover {
+  transform: scale(0.97);
+}
+
+.nav .nav-right .toggle-btn .b2:hover {
+  transform: scale(1.13);
+}
+
+.nav .menu-chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px 2px rgba(223, 211, 181, 0.55);
+}
+
+.nav .menu-chat > span {
+  width: 16px;
+  height: 3px;
+  background-color: yellow;
+  border-radius: 12px;
+}
+
+.nav .clicked > span {
+  width: 16px;
+  height: 3px;
+  background-color: yellow;
+  border-radius: 12px;
+}
+
+.nav .clicked span:nth-child(2):checked {
+  width: 12px;
+  animation: 0.5s burgerMenu forwards;
+}
+
+/************Message nav /  Right/Send *************/
+
+.chat .message-nav {
+  width: 100%;
+  background-color: #827397;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat .message-nav textarea {
+  width: 86%;
+  height: 100%;
+  bottom: 0;
+  align-self: flex-start;
+  resize: none;
+}
+
+.chat .message-nav .paperPlane {
+  color: #fefefe;
+  cursor: pointer;
+  transform: translateX(-7px);
+  transition: 0.2s ease-out;
+}
+
+.chat .message-nav .paperPlane:active {
+  transform: translate(-1px, -8px);
+  color: #3d82aa;
+}
+
+/*****************  Message  **********************/
+
+/**************Received MEssages **************/
+.chat .messages {
+  height: 71.9%;
+  background-color: rgb(167, 167, 206);
+  overflow-y: scroll;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: -10px;
+}
+
+.chat .messages .message p:nth-child(n + 2) {
+  margin-left: 5px;
+  margin-top: 0px;
+  color: red;
+}
+
+.chat .messages .message p:nth-child(1) {
+  font-size: 0.8rem;
+  margin-left: 4px;
+  display: inline;
+  background-color: rgb(97, 123, 31);
+  color: rgb(65, 61, 61);
+  outline: 1px solid black;
+  border-radius: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.chat .messages .message p:nth-child(2) {
+  font-size: 0.7rem;
+  margin-right: 2px;
+}
+
+.chat .messages .message p:last-child {
+  margin-top: -10px;
+  font-size: 0.45rem;
+  color: grey;
+}
+
+/***********************---_Sent Messages_---******************************/
+
+.chat .messages .message-you {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.chat .messages .message-you p:nth-child(n + 2) {
+  margin-right: 5px;
+  margin-top: 0px;
+  color: red;
+}
+
+.chat .messages .message-you p:nth-child(1) {
+  font-size: 0.8rem;
+  margin-right: 4px;
+  display: inline;
+  background-color: rgb(64, 86, 151);
+  color: rgb(125, 171, 102);
+  align-self: flex-end;
+  outline: 1px solid black;
+  border-radius: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.chat .messages .message-you p:nth-child(2) {
+  font-size: 0.7rem;
+  margin-top: -10px;
+  margin-left: 2px;
+}
+
+.chat .messages .message-you p:last-child {
+  margin-top: -10px;
+  font-size: 0.45rem;
+  color: grey;
+  align-self: flex-end;
+}

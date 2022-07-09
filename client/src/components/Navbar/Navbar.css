@@ -1,0 +1,279 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 15vh;
+  min-width: 100vw;
+  background-color: rgb(85, 86, 96);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/*    Image-- Logo*/
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(2, 30, 9);
+  border-radius: 50%;
+  display: inline;
+  margin-left: 2rem;
+}
+
+/***************----Pages----****************/
+
+.pages {
+  display: flex;
+  justify-content: space-around;
+  gap: 2vw;
+}
+
+.pages > a {
+  text-decoration: none;
+  position: relative;
+}
+
+.pages .chat a {
+  text-decoration: none;
+  position: relative;
+}
+
+.pages a:visited {
+  color: yellow;
+}
+
+.pages > a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  left: -10%;
+  bottom: -2px;
+  background-color: red;
+  z-index: 10;
+  position: absolute;
+  transition: 0.3s ease-out;
+}
+
+.pages a:hover::after {
+  width: 120%;
+}
+
+.pages .chat a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  left: -10%;
+  bottom: -2px;
+  background-color: rgb(169, 216, 159);
+  z-index: 10;
+  position: absolute;
+  transition: 0.3s ease-out;
+}
+
+.pages .chat a:hover::after {
+  width: 120%;
+}
+
+.pages a .pages-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navbar .chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.navbar .chat a {
+  text-decoration: none;
+}
+
+.chat-menu-home {
+  z-index: 6;
+  position: absolute;
+  bottom: 73.5%;
+}
+
+.chat-menu-home .friends-container {
+  position: absolute;
+  left: 182px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid yellow;
+  height: 130px;
+  overflow-y: scroll;
+  transition: 2s ease-out;
+}
+
+.chat-menu-home .friends-container .toggle-friends-chat {
+  height: 70px;
+  width: 120px;
+  background-color: rgb(178, 178, 195);
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.chat-menu-home .friends-container .toggle-friends-chat .icon {
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.chat-menu-home .friends-container .toggle-friends-chat .icon:hover {
+  transform: scale(1.1);
+}
+
+.chat-menu-home .friends-container .toggle-friends-chat .icon:active {
+  transform: scale(0.97);
+}
+
+.pages-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pages-container input {
+  display: inline;
+  width: 220px;
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  outline-style: none;
+  margin-top: 10px;
+  margin-bottom: -20px;
+}
+
+.search-friends {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+.search-friends .icon {
+  margin-top: 30px;
+  margin-left: -17px;
+  color: rgb(177, 177, 52);
+  cursor: pointer;
+}
+
+/****************** group Style ******************/
+
+.chat-rooms {
+  position: absolute;
+  bottom: -201px;
+  right: 0;
+  height: 200px;
+  display: inline;
+  overflow-y: scroll;
+  border: 2px solid rgb(101, 101, 117);
+  width: 179px;
+  border-radius: 4px;
+}
+
+.chat-rooms .chat-rooms-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(100px);
+  border: 2px solid yellow;
+  height: 24px;
+}
+
+.chat-rooms-menu nav {
+  height: 35px;
+  width: 160px;
+  background-color: rgb(196, 188, 188);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-rooms-menu nav .icon {
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.chat-rooms-menu nav .icon:hover {
+  transform: scale(1.1);
+}
+
+.chat-rooms-menu nav .icon:active {
+  transform: scale(0.97);
+}
+
+.chat-rooms-menu nav button {
+  width: 110px;
+  margin-right: 4px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 2px 4px 2px rgba(159, 153, 153, 0.08);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.chat-rooms-menu nav button:active {
+  transform: scale(0.97);
+}
+/****************----Mode----*****************/
+
+.mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode .mode-container {
+  width: 59px;
+  height: 25px;
+  background-color: #a0bcc2;
+  margin-right: 2rem;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode .mode-container span {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+  margin-left: 2px;
+  /* margin-right: 2px; */
+  /* z-index: 20; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.mode .mode-container span:active {
+  transform: scale(0.94);
+}
+
+.mode .mode-container .icon:active {
+  transform: scale(0.92);
+}

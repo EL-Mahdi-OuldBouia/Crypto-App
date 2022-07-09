@@ -1,0 +1,35 @@
+.news {
+  width: 140px;
+  height: 180px;
+  background: linear-gradient(45deg, #7f8487, #413f42);
+  display: flex;
+  color: #f2f2f2;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  transition: 0.3s ease-out;
+}
+
+.news h3 {
+  font-size: 0.8rem;
+}
+
+.news h4 {
+  font-size: 0.7rem;
+}
+
+.news a {
+  font-size: 0.75rem;
+  color: #bdbaba;
+}
+
+.news img {
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: -2px 1px 10px 2px #e9d5da;
+}
+
+.news:hover {
+  transform: scale(1.02) translateY(10px);
+  position: absolute;
+}
